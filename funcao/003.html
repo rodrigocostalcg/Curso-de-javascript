@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Função fatorial de um número inteiro
+
+        function fatorial(n){
+            var produto = 1;
+            while (n > 1) {
+                produto *= n;
+                n--;
+                
+            }return produto;
+        }
+
+        //Outra função utilizando outro laço
+
+        function fatoria1(int =n){
+            produto = 1;
+            for( var i = 2; i <= n; i ++){
+            produto *= i;
+            }
+            return produto;
+        }
+
+        document.write('O fatorial do número digitado é:',fatorial(window.prompt('Entre com um número que deseja calcular seu fatorial:')));
+
+    </script>
+    
+</body>
+</html>
